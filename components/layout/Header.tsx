@@ -7,26 +7,26 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
-      <div className="flex items-center justify-between px-12 py-10 max-w-full">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-preto-quente/5">
+      <div className="flex items-center justify-between px-12 py-20 max-w-full">
         {/* Left: Menu */}
         <div className="flex items-center gap-4">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="flex flex-col gap-1.5 hover:opacity-60 transition-opacity"
+            className="flex flex-col gap-1.5 hover:opacity-80 transition-opacity"
             aria-label="Toggle menu"
           >
             <span className={`h-px w-6 bg-branco-quente transition-all ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
             <span className={`h-px w-6 bg-branco-quente ${isMenuOpen ? 'opacity-0' : ''}`} />
             <span className={`h-px w-6 bg-branco-quente transition-all ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </button>
-          <span className="text-xs tracking-widest text-pedra-clara">MENU</span>
+          <span className="text-sm tracking-widest text-pedra-clara">MENU</span>
         </div>
 
         {/* Center: Logo */}
         <Link
           href="/"
-          className="absolute left-1/2 transform -translate-x-1/2 text-4xl tracking-wider font-heading font-light text-branco-quente hover:opacity-70 transition-opacity"
+          className="absolute left-1/2 transform -translate-x-1/2 text-6xl tracking-wider font-heading font-medium text-branco-quente hover:opacity-80 transition-opacity"
         >
           FVS
         </Link>
@@ -35,13 +35,13 @@ export function Header() {
         <div className="flex items-center gap-8">
           <Link
             href="#contact"
-            className="text-xs tracking-widest text-pedra-clara hover:text-branco-quente transition-colors"
+            className="text-sm tracking-widest text-pedra-clara hover:text-branco-quente transition-colors"
           >
             CONTATO
           </Link>
           <button
             aria-label="Favorite"
-            className="hover:opacity-60 transition-opacity"
+            className="hover:opacity-80 transition-opacity"
           >
             <svg
               className="w-5 h-5 text-pedra"
