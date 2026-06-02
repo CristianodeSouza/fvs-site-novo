@@ -7,10 +7,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Adicionar cores da marca FVS aqui
+        'verde-profundo': '#1D281F',
+        'verde-serra': '#2B3A2C',
+        'pedra': '#C2AE8F',
+        'pedra-clara': '#DDD0B8',
+        'off-white': '#F4F0E8',
+        'branco-quente': '#FAF7F0',
+        'preto-quente': '#171713',
       },
       fontFamily: {
-        // Adicionar fontes aqui
+        heading: 'var(--font-heading)',
+        body: 'var(--font-body)',
       },
     },
   },
