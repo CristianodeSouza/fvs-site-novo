@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Path \"docs\", \"app\", \"components\", \"components/ui\", \"components/layout\", \"components/sections\", \"lib\", \"public\", \"styles\" -Force)",
+      "Bash(Out-Null)",
+      "Bash(Get-ChildItem -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Sort-Object)",
+      "Bash(grep -v '^$')",
+      "Bash(awk '{print \" \" $0}')",
+      "Bash(awk '{print \" ✓ \" $9 \" \\(\" $5 \"\\)\"}')",
+      "Bash(awk '{print \"  ✓ \" $9 \" \\(\" $5 \"\\)\"}')",
+      "Bash(awk ' *)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)"
+    ]
+  },
+  "disabledMcpjsonServers": [
+    "sketchup"
+  ]
+}
